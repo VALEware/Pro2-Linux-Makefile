@@ -1,3 +1,5 @@
+# https://makefiletutorial.com/
+
 TARGET_EXEC := final_program
 
 BUILD_DIR := ./build
