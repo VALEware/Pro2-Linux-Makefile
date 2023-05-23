@@ -62,11 +62,11 @@ void ViewPortGL::initStaticBuffers() {
 
 
 ViewPortGL::~ViewPortGL() {
+    if (plain2DPixelShader != nullptr) delete plain2DPixelShader;
     delete pixelData;
     delete lineData;
     delete triangleData;
     delete win;
-    if (plain2DPixelShader != nullptr) delete plain2DPixelShader;
 }
 
 GLFWwindow* ViewPortGL::getWindId() {
